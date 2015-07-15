@@ -113,9 +113,7 @@ nav {
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 2%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  padding: 20px;
   font-family: 'Lora', serif;
   font-size: 1.5em;
 }
@@ -128,16 +126,29 @@ nav {
 */
 
 .about-img {
-  width: 40%;
-  padding: 5%;
+  width: 46%;
+  padding-top: 2%;
   padding-bottom: 0;
+}
+
+img#left {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+img#right {
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 #about {
   width: 90%;
   padding: 5%;
   padding-top: 0;
+  padding-bottom: 0;
   color: black;
+  text-align: center;
+  font-size: 1.1em;
 }
 
 /* 
@@ -162,6 +173,63 @@ nav {
   opacity: .8;
 }
 
+/* 
+  //////////////////////////////////////////////////
+    CONTACT
+  //////////////////////////////////////////////////
+*/
+
+.contact a {
+  color: black;
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: gray;
+  opacity: .5;
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/images/contact.jpg");
+  background-size: cover;
+  width: auto;
+  height: 600px;
+  margin: 10px 0 0 10px;
+  position: relative;
+}
+
+.mid h2 {
+  display: block;
+  font-weight: 900;
+  font-family: 'Lora', serif;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 1.5em;
+  transform: translate(-50%, -50%);
+}
+
+img.contact-img {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* 
   //////////////////////////////////////////////////
@@ -170,17 +238,27 @@ nav {
 */
 
 
+.footer-sticky {
+  width: 100%;
+  height: 5em;
+  margin-top: 15px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  padding-left: 2%;
+}
+
 .footer, .push {
   width: 100%;
   height: 5em;
-  margin-top: 10px;
+  margin-top: 15px;
   display: block;
   position: relative;
   bottom: 0;
   padding-left: 2%;
 }
 
-.footer a {
+.footer a, .footer-sticky a {
   padding: 10;
   margin: 5px;
 }
