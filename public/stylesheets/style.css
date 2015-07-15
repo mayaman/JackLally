@@ -162,15 +162,15 @@ img#right {
   margin: 1.5%;
 }
 
-.photos h2 {
-  margin: 1.5%;
-  border-bottom: 1px solid gray;
-}
-
 .photos img:hover {
   width: 30%;
   margin: 1.5%;
   opacity: .8;
+}
+
+.photos h2 {
+  margin: 1.5%;
+  border-bottom: 1px solid gray;
 }
 
 /* 
