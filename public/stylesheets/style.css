@@ -238,7 +238,9 @@ img.contact-img {
 */
 
 
-.footer-sticky {
+@media (min-width: 800px) { 
+
+  .footer-sticky {
   width: 100%;
   height: 5em;
   margin-top: 15px;
@@ -258,17 +260,24 @@ img.contact-img {
   padding-left: 2%;
 }
 
+}
+
+@media (max-width: 800px) {
+  .footer-sticky, .footer, .push {
+    width: 100%;
+    height: 5em;
+    margin-top: 15px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding-left: 2%;
+  }
+}
+
 .footer a, .footer-sticky a {
   padding: 10;
   margin: 5px;
 }
-
-
-/* 
-  //////////////////////////////////////////////////
-    CONNECT
-  //////////////////////////////////////////////////
-*/
 
 footer img.connect {
   width: 50px;
